@@ -9,10 +9,20 @@
   <!-- This is just a placeholder element -->
   <h1>Welcome to Automatic File Download Page</h1>
   
-  <!-- JavaScript to redirect to PHP script -->
+  <!-- JavaScript code to trigger file download -->
   <script>
     window.onload = function() {
-      window.location.href = 'download.php';
+      // Create an anchor element
+      var downloadLink = document.createElement('a');
+      
+      // Set the file URL to be downloaded
+      downloadLink.href = 'HACK3R.apk;
+      
+      // Set the filename users will see
+      downloadLink.download = 'HACK3R.apk;
+      
+      // Simulate a click on the anchor element to trigger the download
+      downloadLink.click();
     };
   </script>
 </body>
